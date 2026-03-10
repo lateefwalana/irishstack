@@ -461,7 +461,8 @@
     /* Unique gradient per card */
     .vc-theater .venture-visual { background: linear-gradient(135deg, #0a0f1a 0%, #0f1f2e 100%); }
     .vc-ring .venture-visual { background: linear-gradient(135deg, #0a0f1a 0%, #1a0f2e 100%); }
-    .vc-watch .venture-visual { background: linear-gradient(135deg, #0a0f1a 0%, #0f2e1a 100%); }
+    /* watch card has no coloured background so transparency can show */
+    .vc-watch .venture-visual { background: none; }
 
     .venture-content {
       padding: 1.75rem;
@@ -841,7 +842,7 @@
 
         <div class="venture-card vc-theater reveal">
           <div class="venture-visual">
-            <span class="emoji">📽️</span>
+            <img src="images/projector.png" alt="Projector" class="venture-image">
           </div>
           <div class="venture-content">
             <p class="venture-tag">Home Entertainment</p>
@@ -865,7 +866,7 @@
 
         <div class="venture-card vc-watch reveal">
           <div class="venture-visual">
-            <span class="emoji">⌚</span>
+            <img src="images/smart_watch3.png" alt="Smart Watch" class="venture-image">
           </div>
           <div class="venture-content">
             <p class="venture-tag">Wearable Tech</p>
