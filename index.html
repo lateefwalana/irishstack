@@ -440,6 +440,24 @@
       filter: drop-shadow(0 0 20px rgba(0,201,122,0.4));
     }
 
+    /* image sizing for ventures (especially the smart ring) */
+    .venture-visual .venture-image {
+      /* leave some breathing room so the graphic doesn't abut the card edges */
+      max-height: 80%;
+      max-width: 80%;
+      width: auto;
+      object-fit: contain;
+      margin: auto;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      /* optional border for emphasis */
+      /* no border to keep the ring clean */
+      border: none;
+      border-radius: 0;
+    }
+
     /* Unique gradient per card */
     .vc-theater .venture-visual { background: linear-gradient(135deg, #0a0f1a 0%, #0f1f2e 100%); }
     .vc-ring .venture-visual { background: linear-gradient(135deg, #0a0f1a 0%, #1a0f2e 100%); }
